@@ -1,0 +1,33 @@
+<table class="table table-striped">
+	<tr>
+		<th>Author(s)</th>
+		<th>Title</th>
+		<th>Edition</th>
+		<th>Year Published</th>
+		<th>ISBN-13</th>
+		<th>Appearances on List</th>
+		<th>Department</th>
+		<th>Course Title</th>
+		<th>Course Number</th>
+		<th>Professor</th>
+		<th>Description</th>
+		<th colspan="2"><a class="btn btn-primary" href="/new_book" role="button">Add Book</a></th>
+	</tr>
+	<% @all_books.each do |entry| %>
+	<tr>
+		<td><%= entry.book_authors %></td>
+		<td><%= entry.book_title %></td>
+		<td><%= entry.book_edition %></td>
+		<td><%= entry.book_yearpublished %></td>
+		<td><%= entry.book_isbn13 %></td>
+		<td><%= entry.book_apponlist %></td>
+		<td><%= entry.book_department %></td>
+		<td><%= entry.book_coursetitle %></td>
+		<td><%= entry.book_coursenumber %></td>
+		<td><%= entry.book_professor %></td>
+		<td><%= entry.book_description %></td>
+		<td><a href="/edit_book/<%= entry.id %>">Edit</a></td>
+		<td><a href="/delete_book/<%= entry.id %>">Delete</a></td>
+	</tr>
+	<% end %>
+</table>

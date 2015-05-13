@@ -1,0 +1,73 @@
+<form class="form-horizontal" action="/update_book/<%= @book_edit.id %>">
+  <div class="form-group">
+    <label for="book_authors" class="col-sm-2 control-label">Authors</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_authors" value="<%= @book_edit.book_authors %>" name="book_authors">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_title" class="col-sm-2 control-label">Title</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_title" value="<%= @book_edit.book_title %>" name="book_title">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_edition" class="col-sm-2 control-label">Edition</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_edition" value="<%= @book_edit.book_edition %>" name="book_edition">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_yearpublished" class="col-sm-2 control-label">Year Published</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_yearpublished" value="<%= @book_edit.book_yearpublished %>" name="book_yearpublished">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_isbn13" class="col-sm-2 control-label">ISBN-13</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_isbn13" value="<%= @book_edit.book_isbn13 %>" name="book_isbn13">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_apponlist" class="col-sm-2 control-label">Appearances on List</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_apponlist" value="<%= @book_edit.book_apponlist %>" name="book_apponlist">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_department" class="col-sm-2 control-label">Department</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_department" value="<%= @book_edit.book_department %>" name="book_department">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_coursetitle" class="col-sm-2 control-label">Course Title</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_coursetitle" value="<%= @book_edit.book_coursetitle %>" name="book_coursetitle">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_coursenumber" class="col-sm-2 control-label">Course Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_coursenumber" value="<%= @book_edit.book_coursenumber %>" name="book_coursenumber">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_professor" class="col-sm-2 control-label">Professor</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_professor" value="<%= @book_edit.book_professor %>" name="book_professor">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="book_description" class="col-sm-2 control-label">Description</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="book_description" value="<%= @book_edit.book_description %>" name="book_description">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Save Edits</button>
+    </div>
+  </div>
+</form>
